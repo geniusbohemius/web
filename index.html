@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dos Cajas Horizontales</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column; /* Apilamiento por defecto */
+            width: 100%;
+            background-color: #f0f0f0; /* Color de fondo del contenedor */
+        }
+
+        .box {
+            width: 100%; /* Ancho completo por defecto */
+            height: 200px; /* Altura fija para las cajas */
+            background-color: #ddd; /* Color de fondo de las cajas */
+            margin-bottom: 10px; /* Espacio entre cajas */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5em;
+        }
+
+        /* Diseño para pantallas más anchas (escritorio) */
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row; /* Alinear cajas horizontalmente */
+                flex-wrap: wrap;
+            }
+
+            .box {
+                width: 48%; /* Dos cajas en una fila */
+                margin-right: 4%; /* Espacio entre cajas */
+                margin-bottom: 0; /* Sin espacio inferior */
+            }
+          .box:nth-child(2) {
+            margin-right: 0; /* Eliminar margen a la última caja */
+          }
+        }
+    </style>
+</label>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Caja 1</div>
+        <div class="box">Caja 2</div>
+    </div>
+</body>
+</html>
