@@ -3,49 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dos Cajas Horizontales</title>
-    <style>
-        .container {
-            display: flex;
-            flex-direction: column; /* Apilamiento por defecto */
-            width: 100%;
-            background-color: #f0f0f0; /* Color de fondo del contenedor */
-        }
-
-        .box {
-            width: 100%; /* Ancho completo por defecto */
-            height: 200px; /* Altura fija para las cajas */
-            background-color: yellow; /* Color de fondo de las cajas */
-            margin-bottom: 10px; /* Espacio entre cajas */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 1.5em;
-        }
-
-        /* Diseño para pantallas más anchas (escritorio) */
-        @media (min-width: 768px) {
-            .container {
-                flex-direction: row; /* Alinear cajas horizontalmente */
-                flex-wrap: wrap;
-            }
-
-            .box {
-                width: 48%; /* Dos cajas en una fila */
-                margin-right: 4%; /* Espacio entre cajas */
-                margin-bottom: 0; /* Sin espacio inferior */
-            }
-          .box:nth-child(2) {
-            margin-right: 0; /* Eliminar margen a la última caja */
-          }
-        }
-    </style>
-</label>
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="box">Caja 1</div>
-        <div class="box">Caja 2</div>
+<h1><strong>CLASES PARTICULARES A DOMICILIO</strong></h1>
+<pre>Licenciado en ciencias matemáticas con experiencia en la 
+  enseñanza de niños, adolescentes y adultos, imparte 
+   clases de matemáticas, física y otras asignaturas. 
+    Interesados pueden contactarme por el WhatsApp  
+     o el formulario que aparece en este anuncio. 
+</pre>
+
+<img src="Captor1.png" alt="Logotipo de la empresa" width="350" height="430">
+    <div class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <form action="https://formsubmit.co/djosuexxi@email.com" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
     </div>
 </body>
 </html>
