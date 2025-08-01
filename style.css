@@ -18,10 +18,13 @@ body {
 .form-container {
     background-color: #ffffff;
     padding: 20px;
-  
+    height: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
     text-align: center;
+    position: absolute;
+    right: 15%;
+    border-radius: 10px;
 }
 
 h2 {
@@ -30,11 +33,12 @@ h2 {
 }
 
 label {
-    font-size: 14px;
-    color: #555;
     margin-bottom: 5px;
     display: block;
     text-align: left;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 input, textarea {
@@ -84,4 +88,8 @@ pre {
  color: white;
  font-size:18px; 
  line-height: 1.5;
+}
+img {
+    position: absolute;
+    left: 20%;
 }
